@@ -269,8 +269,8 @@ def processing(image, breiteStart, breiteEnd, hoeheStart, hoeheEnd):
 if __name__ == '__main__':
     print("Hello")
 
-    imageWidth = 150
-    imageHeight = 150
+    imageWidth = 200
+    imageHeight = 200
     cam = Camera(imageWidth, imageHeight)
 
     image = Image.new("RGB", (imageWidth, imageHeight))
@@ -288,10 +288,10 @@ if __name__ == '__main__':
     vlist = []
     flist = []
 
-    sq = "nein"
+    sq = "ja" # zu nein ändern um kugeln und dreieck zu bekommen
 
     if sq == "ja":
-        sqirrel = open("RayTracer/squirrel_aligned_lowres.obj.txt")
+        sqirrel = open("squirrel_aligned_lowres.obj.txt")
 
         for x in sqirrel:
             if x.startswith("v"):
